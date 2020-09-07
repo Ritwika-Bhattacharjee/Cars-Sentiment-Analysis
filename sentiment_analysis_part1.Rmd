@@ -1,0 +1,226 @@
+---
+title: "MAHINDRA  SENTIMENT ANALYSIS"
+author: "RITWIKA BHATTACHARJEE"
+date: "06/09/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+```
+
+```{r}
+CarSales <- read.csv("C:/Users/hp/Desktop/FALL-2020-21/Mahindra Project/Datasets/CarSales.csv", header=TRUE)
+```
+
+```{r}
+head(CarSales)
+```
+
+## <b> POSITIVE SENTIMENT ANALYSIS </b>
+
+### <b> CARS IN PRICE RANGE 5-10 </b>
+
+```{r}
+cars0to5 = CarSales %>%
+  filter(Price.Category == '5-10')
+#remove NA values
+
+cars0to5 = cars0to5[complete.cases(cars0to5),]
+```
+
+#### Analysis by Manufacturer or OEM
+```{r}
+#Average sales of each manufacturer
+cars0to5 %>%
+  group_by(OEM) %>%
+  summarise(avg_sales_2018 = mean(FY18), avg_sales_2019 = mean(FY19), total_avg_sales = (mean(FY18)+mean(FY19))/2) %>%
+  dplyr::select(OEM, avg_sales_2018, avg_sales_2019, total_avg_sales) %>%
+  arrange(desc(total_avg_sales))
+```
+
+### <b>Observation: </b> It is observed that top 5 manufacturers corresponding to maximum sales in both years is Maruti Suzuki, Hyundai, Honda, Tata, Mahindra
+
+#### Analysis by car manufacturer and car category
+
+```{r}
+#Average sales of each manufacturer and car category
+cars0to5 %>%
+  group_by(OEM, Car.Category) %>%
+  summarise(avg_sales_2018 = mean(FY18), avg_sales_2019 = mean(FY19), total_avg_sales = (mean(FY18)+mean(FY19))/2) %>%
+  dplyr::select(OEM, Car.Category, avg_sales_2018, avg_sales_2019, total_avg_sales) %>%
+  arrange(desc(total_avg_sales))
+```
+
+### <b> Observation </b> The top ten cars having highest average sales are:
+####1. Maruti Suzuki	Compact sedanÿ
+####2. Maruti Suzuki	Super Mini
+####3. Maruti Suzuki	Hatch
+####4. Hyundai	Supermini
+####5. Maruti Suzuki	Hatback
+####6. Hyundai	Hatch
+####7. Mahindra	SUV
+####8. Honda	Compact Sedan
+####9. Tata	SUV
+####10. Hyundai	compact SUV
+
+#### To analyse the sentiment of customers we have to find the prominent features in these car categories which primary attracted the customers
+
+```{r}
+CarFeatures <- read.csv("C:/Users/hp/Desktop/FALL-2020-21/Mahindra Project/Datasets/CarFeatures.csv", header=TRUE)
+```
+
+```{r}
+CarFeatures = CarFeatures %>%
+  filter(Price.Band..Lakh == "fiveten")
+dim(CarFeatures)
+```
+
+#### Displaying the list of features in each of these cars
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Maruti Suzuki", Car.Category == "Compact sedanÿ") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = colnames(x)
+```
+
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Maruti Suzuki", Car.Category == "Super Mini") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[1,]
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = append(features_list, colnames(x))
+```
+
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Maruti Suzuki", Car.Category == "Hatch") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = append(features_list, colnames(x))
+```
+
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Hyundai", Car.Category == "Supermini") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = append(features_list, colnames(x))
+```
+
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Maruti Suzuki", Car.Category == "Hatback") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = append(features_list, colnames(x))
+```
+
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Hyundai", Car.Category == "Hatch") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = append(features_list, colnames(x))
+```
+
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Mahindra", Car.Category == "SUV") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = append(features_list, colnames(x))
+```
+
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Honda", Car.Category == "Compact Sedan") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = append(features_list, colnames(x))
+```
+
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Tata", Car.Category == "SUV") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = append(features_list, colnames(x))
+```
+
+```{r}
+x = CarFeatures %>%
+  filter(OEM == "Hyundai", Car.Category == " compact SUV") %>%
+  dplyr::select(-Price.Band..Lakh, -OEM, -MODEL,-Car.Category, -LATEST.LAUNCH.1EAR.20..., -VARIANT, -COST.Ex.Showroom.)
+
+x = x[ , colSums(is.na(x)) == 0]
+
+features_list = append(features_list, colnames(x))
+```
+
+```{r}
+#finding frequencies of each features in the top sold cars
+freqdata = as.data.frame(table(features_list))
+freqdata = freqdata %>%
+  arrange(desc(Freq))
+head(freqdata,30)
+```
+
+### <b> Observation </b> According to customers positive sentiment analysis these are the top 30 desirable features in cars of price range 5 to 10 lacs 
+
+#### Further we can also group the above features into types of features to understand which category of features is most valued by customers
+
+```{r}
+freqdata = freqdata %>%
+  mutate(features_list = gsub('\\.',"",features_list))
+
+FeatureDesc <- read.csv("C:/Users/hp/Desktop/FALL-2020-21/Mahindra Project/Datasets/FeatureDesc.csv")
+
+FeatureDesc = FeatureDesc %>%
+  mutate(Feature = gsub("[[:punct:]]", "", Feature)) %>%
+  mutate(Feature = gsub(" ","",Feature))
+
+```
+
+```{r}
+FeatureDesc$Feature.Category = as.character(FeatureDesc$Feature.Category)
+library(stringr)
+FeatureDesc$shortcat <- substr(word(FeatureDesc$Feature.Category, 1),1,8)
+
+catlist=c()
+for (i in seq(1,dim(freqdata)[1])){
+  catlist = append(catlist, FeatureDesc$shortcat[FeatureDesc$Feature==as.character(freqdata$features_list[i])])
+}
+table(catlist)
+barplot(table(catlist))
+```
+
+### <b>Observation: It can be observed from the above analysis that customers of cars in price range 5 to 10 lacs prefer Comfort, safety and exterior car features over entertainment and interior features </b>
+
+

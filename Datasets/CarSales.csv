@@ -1,0 +1,161 @@
+Price Category,OEM,Vehicle,Car Category,Cost,FY18,FY19
+5-10,FCA,Avvenntura,compact SUV,9,,
+5-10,FCA,Linea,Sedan,9.99,115,94
+5-10,FCA,Punto,hatch,9.98,,
+5-10,FCA,Urban Cross,Crossover,9.85,,
+5-10,Ford,Aspire,Compact Sedan,8.34,16721,8718
+5-10,Ford,Figo,Hatch,6.95,4130,8372
+5-10,Ford,Freestyle,Compact crossover SUV,7.29,18643,9695
+5-10,Honda,Amaze,Compact Sedan,9.95,67584,67715
+5-10,Honda,Jazz,Hatch,9.61,18370,9512
+5-10,Honda,WR-V,Compact crossover,9.24,36835,19947
+5-10,Hyundai,Aura,Sedan,8.54,,
+5-10,Hyundai,i10 GRAND,Hatch,6,134249,102693
+5-10,Hyundai,i20 Active,Supermini,10.09,141104,123201
+5-10,Hyundai,Santro,Hatch,5.98,24741,64729
+5-10,Hyundai,Venue, compact SUV,8.09,0,70443
+5-10,Hyundai,Xcent,Sedan,8.75,41476,19215
+5-10,Mahindra,Bolero,SUV,8.99,85464,69656
+5-10,Mahindra,E-Verito,Sedan,9.46,1433,1105
+5-10,Mahindra,KUV100 NXT,Supermini,7.15,18424,3107
+5-10,Mahindra,Thar,Off Raod SUV,9.99,6430,3605
+5-10,Mahindra,TUV300,Compact SUV,9.76,24311,13592
+5-10,Maruti Suzuki,Baleno,Hatch,6.77,210236,183862
+5-10,Maruti Suzuki,Celerio,Hatback,5.63,100957,70930
+5-10,Maruti Suzuki,Dzire,Compact sedanÿ,5.88,264612,198904
+5-10,Maruti Suzuki,Ignis,Compact SUV,6.8,43602,22140
+5-10,Maruti Suzuki,S-Cross,Compact crossover SUV,8.85,41528,18179
+5-10,Maruti Suzuki,Swift,Super Mini,6.97,223630,191901
+5-10,Maruti Suzuki,Wagon R,Hatch,5.53,152020,155967
+5-10,Maruti Suzuki,Gypsy,,,4478,563
+5-10,Nissan,Go,Hatch,,6061,2801
+5-10,Nissan,Kicks,Compact crossover SUV,9.89,11,4776
+5-10,Nissan,Micra,Hatch,8.16,4310,1027
+5-10,Nissan,Sunny,Sedan,9.93,1725,678
+5-10,Renault,Duster,Compact SUV,9.99,10937,8974
+5-10,Renault,Lodgy,Compact MPV,8.64,1126,533
+5-10,Renault,Triber,Compact MPV,6.78,0,24142
+5-10,Tata,Altroz,Hatback,9.29,,
+5-10,Tata,Tiago,,,92286,63215
+5-10,Tata,Bolt,,,2420,337
+5-10,Tata,Zest,,,13656,5450
+5-10,Tata,Nexon,SUV,8.45,52519,49312
+5-10,Tata,Tigor,Sedan,5.75,29038,13112
+5-10,Toyota,Liva Cross,Compact SUV,7.76,15129,9083
+5-10,Toyota,Etios,Compact Sedan,6.65,21869,17236
+5-10,Toyota,Yaris,Hatch,8.76,10799,2943
+5-10,Toyota,Glanza,Compact MPV,8.9,0,17946
+5-10,Volkswagen,Ameo,Compact Sedan,9.9,9878,6704
+5-10,Volkswagen,Polo,Hatch,9.88,18985,18501
+5-10,Volkswagen,Vento,Sedan,8.76,6317,5606
+10-15,Ford,EcoSport,Compact crossover,11.43,51973,39989
+10-15,Honda,City,Sedan,14.67,42045,28696
+10-15,Honda,BR-V,,,7140,2857
+10-15,Mahindra,Marazzo,Compact MPV,14.76,14994,19303
+10-15,Mahindra,Scorpio,SUV,14.83,49063,46725
+10-15,Mahindra,XUV300,Compact SUV,11.99,0,40197
+10-15,Mahindra,XUV500,SUV,14.49,25341,17175
+10-15,Maruti Suzuki,Ciaz,Sedan,11.09,50759,29706
+10-15,Maruti Suzuki,XL6,MPV,11.51,0,15240
+10-15,Maruti Suzuki,Ertiga,Light Utility Vehicle,10.13,56408,93081
+10-15,Maruti Suzuki,Vitara Brezza,Mini SUV,11.4,155466,127094
+10-15,MG,Hector,SUV,13.48,0,15930
+10-15,Nissan,Kicks,Compact crossover SUV,13.69,11,4776
+10-15,Nissan,Terrano,,,1162,429
+10-15,Nissan,Terrano,Compact SUV,14.64,1162,429
+10-15,Renault,Captur,Compact crossover,11.99,3490,1782
+10-15,Tata,Harrier,Compact SUV,13.69,0,15227
+10-15,Tata,Hexa,SUV,13.7,9764,2917
+<5 ,Maruti Suzuki,OMNI,Van,,86257,20930
+<5 ,Maruti Suzuki,Alto 800,Hatch,4.32,256661,208087
+<5 ,Maruti Suzuki,ECCO,Van,,84565,114105
+<5 ,Maruti Suzuki,Ignis,Hatch,4.89,43602,22140
+<5 ,Maruti Suzuki,S-Presso,Hatch,3.7,0,35254
+<5 ,Nissan,Redi-Go,Hatch,,22556,11284
+<5 ,Renault,Kwid,Mini SUV,3.02,66815,53438
+>100,Audi,A8,Crossover SUV,156,,
+>100,Audi,Q8,Crossover SUV,133,,
+>100,Bentley,Bentayga,SUV,385,,
+>100,Bentley,Continental,Sedan,357,,
+>100,Bentley,Flying Spur,Sedan,341,,
+>100,Bentley,Mulsanne,Sedan,555,,
+>100,BMW,M,Coupe,154,,
+>100,BMW,X7,SUV,106,,
+>100,FCA,Grand Cherokee,SUV,114,,
+>100,Land Rover,Range Rover,SUV,237,,
+>100,Land Rover,Range Rover,SUV,406,,
+>100,Mercedes-Benz,AMG GT,Sports Car,232,,
+>100,Mercedes-Benz,E-Class,Sedan,150,,
+>100,Mercedes-Benz,G-Class,Sports Car,150,,
+>100,Mercedes-Benz,G-Class,Off road SUV,219,,
+>100,Mercedes-Benz,GLE,SUV,125,,
+>100,Mercedes-Benz,S-Class,Sedan,139,,
+>100,Mercedes-Benz,V-Class,MPV,146,,
+>100,Nissan,GT-R,Sports Car,212,,
+15-20,Hyundai,Creta,Compact crossover,17.2,120905,99736
+15-20,Isuzu,D Max V Cross,Utility Vehicle,16.51,,
+15-20,Kia,Seltos,Compact crossover,17.29,0,45494
+15-20,Tata,Safari Storme,SUV,16.43,6138,2832
+15-20,Toyota,Corolla Altis,Sedan,17.71,3268,1422
+15-20,Toyota,Innova Crysta,Compact MPV,16.14,78130,61743
+15-20,FCA,Compass,Crossover,21.92,18287,10935
+20-25,Honda,Civic,Sedan,21.35,0,4928
+20-25,Honda,CR-V,,,629,1083
+20-25,Hyundai,Sonata Facelift,Sedan,20.77,,
+20-25,Hyundai,Tucson,Compact crossover SUV,23.73,1826,970
+20-25,MG,ZS EV,SUV - Electric,23.58,,
+20-25,Skoda ,Octavia,Sedan,23.59,2746,2405
+20-25,Skoda ,Rapid,Sedan,,10396,9751
+20-25,Skoda ,Superb,Sedan,23.99,1525,1409
+25-30,Ford,Endeavour,SUV,29.55,6244,6787
+25-30,Hyundai,KONA,,,0,292
+25-30,Isuzu,ISUZU MUX,SUV,28.22,,
+25-30,Kia,Carnival,MPV,25.15,,
+25-30,Mahindra,Alturas G4,SUV,28.69,356,2042
+25-30,Mitsubishi,Outlander,SUV,26.93,,
+25-30,Mitsubishi,Pajero Sport,SUV,30,,
+30-40,Mercedes-Benz,GLA-Class,Hatch,38.64,,
+30-40,Skoda ,Kodiaq,Crossover SUV,36.78,2025,1719
+30-40,Toyota,Camry,Sedan,37.88,334,672
+30-40,Toyota,Fortuner,SUV,33.95,21800,15488
+30-40,Volkswagen,Tiguan Allspace,Compact crossover SUV,33.13,1228,1208
+30-40,Volkswagen,Passat,Sedan,30.12,618,305
+30-40,Volvo,S60,sedan,38.5,,
+30-40,Volvo,XC40,Compact SUV,39.9,,
+40-60,Audi,A4,Sedan,46.96,,
+40-60,Audi,A6,Sedan,59.42,,
+40-60,Audi,Q3,Compact crossover SUV,43.61,,
+40-60,Audi,Q5,Crossover SUV,56.21,,
+40-60,BMW,5 Series,Sedan,55.4,,
+40-60,BMW,X3,Compact crossover SUV,56,,
+40-60,Land Rover,Discovery Sport,Compact crossover SUV,60.89,,
+40-60,Land Rover,Range Rover Evoque,SUV,59.85,,
+40-60,Mercedes-Benz,C-Class,Sedan,51.25,,
+40-60,Mercedes-Benz,GLC,SUV,57.75,,
+40-60,Toyota,Prius,Sedan,45.53,,
+40-60,Volvo,S60,Sedan,56.02,,
+40-60,Volvo,S60 Cross Country,Sedan,44.26,,
+40-60,Volvo,S90,Sedan,58.9,,
+40-60,Volvo,XC60,Compact crossover SUV,59.9,,
+60-100,Audi,A5,Coupe,69.48,,
+60-100,Audi,Q7,SUV,77.11,,
+60-100,Audi,S5,Coupe,72.65,,
+60-100,BMW,5 Series,Sedan,68.4,,
+60-100,BMW,6 Series,Sedan,75.9,,
+60-100,BMW,M2,Coupe,83.4,,
+60-100,BMW,X4,SUV,67.9,,
+60-100,FCA,Grand Cherokee,SUV,89.31,,
+60-100,Ford,Mustang,Sports Car,74.62,,
+60-100,Jeep,Wrangler,Off Raod SUV,68.94,,
+60-100,Land Rover,Defender,Crossover SUV,80.43,,
+60-100,Land Rover,Range Rover Sport,SUV,94.8,,
+60-100,Land Rover,Range Rover Velar,Crossover SUV,71.87,,
+60-100,Mercedes-Benz,E-Class,Sedan,75.29,,
+60-100,Mercedes-Benz,GLC-Coupe,SUV,63.7,,
+60-100,Mercedes-Benz,GLE,SUV,73.7,,
+60-100,Mercedes-Benz,GLS,SUV,87.76,,
+60-100,Mercedes-Benz,V-Class,MPV,81.9,,
+60-100,Toyota,VELLFIRE,MPV,,,
+60-100,Toyota,VELLFIRE,MPV,79.5,0,30
+60-100,Toyota,Land Cruiser,SUV,86,137,123
+60-100,Volvo,V90 Cross Country,Sedan,65.31,,
